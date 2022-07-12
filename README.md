@@ -3,7 +3,7 @@
 The two subdirectories here are exactly the same, except:
 
 - In the 3.2.0/ directory, the dependencies include `"axios-retry": "3.2.0"`
-- In the 3.2.4/ directory, the dependencies include `"axios-retry": "3.2.4"`
+- In the 3.2.1/ directory, the dependencies include `"axios-retry": "3.2.1"`
 
 Each has a Webpack install, with a very simple configuration:
 
@@ -23,7 +23,7 @@ To reproduce the issue, I recommend running:
 
 ```bash
 pushd 3.2.0 && yarn install && yarn test && popd
-pushd 3.2.4 && yarn install && yarn test && popd
+pushd 3.2.1 && yarn install && yarn test && popd
 ```
 
 ### Spoilers
@@ -41,7 +41,7 @@ pushd 3.2.4 && yarn install && yarn test && popd
 }
 ```
 
-**However** `3.2.4` introduces a (breaking, non-BC) change, and returns a module object (not callable):
+**However** `3.2.1` returns a module object (not callable):
 
 ```
 Object [Module] {
