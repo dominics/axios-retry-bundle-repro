@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "webpack && node dist/bundle.js"
+  },
+  "devDependencies": {
+    "axios": "0.27.2",
+    "axios-retry": "3.3.1",
+    "webpack": "4",
+    "webpack-cli": "3"
+  }
+}

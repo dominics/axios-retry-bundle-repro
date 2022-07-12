@@ -30,7 +30,7 @@ pushd 3.2.4 && yarn install && yarn test && popd
 
 `3.2.0` returns the following function:
 
-```js
+```
 [Function: O] {
   isNetworkError: [Function: i],
   isSafeRequestError: [Function: a],
@@ -43,7 +43,7 @@ pushd 3.2.4 && yarn install && yarn test && popd
 
 **However** `3.2.4` introduces a (breaking, non-BC) change, and returns a module object (not callable):
 
-```js
+```
 Object [Module] {
   isNetworkError: [Getter],
   isRetryableError: [Getter],
